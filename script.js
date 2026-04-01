@@ -1,7 +1,3 @@
-/* ============================================================
-   Ajay Thakur — Portfolio JavaScript
-   ============================================================ */
-
 // ── SMOOTH SCROLL TO SECTION ──
 function scrollToSection(id) {
   const el  = document.getElementById(id);
@@ -45,16 +41,17 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 // ── ANIMATE ON SCROLL + SKILL BARS ──
+// threshold: 0 means it fires as soon as even 1px is visible
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      // Trigger skill bar fills when skills section comes into view
       entry.target.querySelectorAll('.skill-fill').forEach(bar => {
         bar.style.width = bar.dataset.width + '%';
       });
+      observer.unobserve(entry.target); // stop watching once visible
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: '0px 0px -50px 0px' });
 
 document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
