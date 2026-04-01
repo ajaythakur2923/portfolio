@@ -1,61 +1,74 @@
-Ajay Thakur — Personal Portfolio Website
-> Live site: **[ajaythakur2923.github.io/portfolio](https://ajaythakur2923.github.io/portfolio)**
-A clean, responsive personal portfolio website built with HTML, CSS, and JavaScript — showcasing my skills, projects, work experience, and contact details for software engineering and game development roles in Australia.
+# Ajay Thakur — Portfolio Website
+
+🔗 **Live Site:** [ajaythakur2923.github.io/portfolio](https://ajaythakur2923.github.io/portfolio)
+
 ---
-About Me
-I'm a Master of Computer Science graduate (Software Engineering) from the University of Wollongong (Nov 2024), with hands-on experience in C++, Python, Unity game development, and cloud-integrated backend systems. I hold a Visa Subclass 485 with full Australian work rights and am actively seeking roles in software engineering, game development, or IT.
+
+This is my personal portfolio website. I built it from scratch using plain HTML, CSS, and JavaScript — no frameworks, no templates. I wanted something clean that actually represents me and works properly, so I put it together myself and hosted it for free on GitHub Pages.
+
 ---
-What's Inside
-File	Description
-`index.html`	Main HTML structure and content
-`style.css`	All styling — layout, colours, animations, responsive design
-`script.js`	Smooth scroll navigation, scroll spy, skill bar animations
+
+## What's on the site
+
+- **About** — my background, education, career goal, and visa status
+- **Skills** — C++, C#, Unity, Python, Flask, Azure, SQL, and web dev with animated progress bars
+- **Experience** — Cignall (IT Support & Team Lead), Coles, Zenith Event & Services
+- **Projects** — Unity 2D Game, QR Code Attendance System (Capstone), AjayAI Chat Assistant
+- **Why Hire Me** — what I bring beyond the technical skills
+- **Certifications** — Web Development Certificate, Online Safety Workshop
+- **Contact** — email, LinkedIn, phone, and availability status
+
 ---
-Sections
-Hero — Name, title, tech stack, and call-to-action
-About — Education, career goal, strengths, location & visa status
-Skills — C++, C#, Unity, Python/Flask, Azure, SQL, Web & DevOps (with animated proficiency bars)
-Experience — Cignall (IT Support & Team Lead), Coles, Zenith Event & Services
-Projects — 2D Unity Game, QR Code Attendance System (Capstone)
-Why Hire Me — Value proposition and personal statement
-Certifications — Web Development Certificate, Online Safety Workshop
-Contact — Email, LinkedIn, phone, and availability status
----
-Tech Stack
+
+## Tech used
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-Pure HTML, CSS, JavaScript — no frameworks, no dependencies
-Google Fonts: Sora + DM Sans
-Fully responsive (mobile, tablet, desktop)
-Smooth scroll navigation with active section highlighting
-Intersection Observer API for scroll-triggered animations
+
+No frameworks. Just HTML, CSS, and JavaScript. Google Fonts for typography — Sora for headings, DM Sans for body text.
+
 ---
-Features
-Sticky navigation bar with smooth scroll to each section
-Active nav highlight updates as you scroll (scroll spy)
-Skill bars animate into view when scrolled into viewport
-Mobile hamburger menu
-Hover effects on all cards
-One-file version (`portfolio.html`) also available for easy sharing
----
-How to Run Locally
-No setup needed. Just clone or download and open in your browser:
-```bash
-git clone https://github.com/your-username/portfolio.git
-cd portfolio
-# Open index.html in your browser
+
+## Files
+
 ```
-Or simply double-click `index.html`.
+portfolio/
+├── index.html   — all the content and structure
+├── style.css    — layout, colours, animations, responsive design
+├── script.js    — smooth scrolling, nav highlighting, skill bar animations
+└── README.md    — you're reading it
+```
+
 ---
-Contact
-	
-Email	ajaythakur2923@gmail.com
-LinkedIn	linkedin.com/in/ajay-thakur-325832130
-Phone	+61 490 916 701
-Location	Wollongong, NSW 2500, Australia
-Visa	Subclass 485 — Full Work Rights
+
+## How to run it locally
+
+Just download the files and open `index.html` in your browser. No server needed, no installs, nothing to configure. It works straight away.
+
 ---
-License
-This project is open source and available under the MIT License.
-Feel free to use this as a template for your own portfolio — just replace the content with your own details!
+
+## How it's hosted
+
+GitHub Pages — completely free. Any changes I push to the main branch go live automatically within about a minute.
+
+---
+
+## Things I built into it
+
+- Sticky navigation bar that highlights the current section as you scroll
+- Smooth scrolling when you click any nav button
+- Skill bars that animate when they scroll into view
+- Mobile hamburger menu for smaller screens
+- Hover effects on cards and contact links
+- Everything works without JavaScript too — content is visible by default
+
+---
+
+## About me
+
+I'm Ajay Thakur, a Master of Computer Science graduate from the University of Wollongong (2024), majoring in Software Engineering. I'm currently based in Wollongong, NSW and actively looking for software engineering, game development, or IT roles. I hold a Visa Subclass 485 with full Australian work rights — no sponsorship needed.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/ajay-thakur-325832130)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/ajaythakur2923)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:ajaythakur2923@gmail.com)
