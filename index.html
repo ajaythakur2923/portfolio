@@ -1,364 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ajay Thakur | IT Graduate Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajay Thakur | IT Graduate Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ── NAVIGATION ── -->
-<nav id="navbar">
-  <span class="nav-brand" onclick="scrollToSection('hero')">Ajay Thakur</span>
-  <ul class="nav-links">
-    <li><button onclick="scrollToSection('about')"          data-section="about">About</button></li>
-    <li><button onclick="scrollToSection('skills')"         data-section="skills">Skills</button></li>
-    <li><button onclick="scrollToSection('experience')"     data-section="experience">Experience</button></li>
-    <li><button onclick="scrollToSection('projects')"       data-section="projects">Projects</button></li>
-    <li><button onclick="scrollToSection('why')"            data-section="why">Why Me</button></li>
-    <li><button onclick="scrollToSection('certifications')" data-section="certifications">Certs</button></li>
-    <li><button onclick="scrollToSection('contact')"        data-section="contact">Contact</button></li>
-  </ul>
-  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar">
+    <span class="nav-brand" onclick="scrollToSection('hero')">Ajay Thakur</span>
+    <ul class="nav-links" id="navLinks">
+      <li><button onclick="scrollToSection('about')"         data-section="about">About</button></li>
+      <li><button onclick="scrollToSection('skills')"        data-section="skills">Skills</button></li>
+      <li><button onclick="scrollToSection('experience')"    data-section="experience">Experience</button></li>
+      <li><button onclick="scrollToSection('projects')"      data-section="projects">Projects</button></li>
+      <li><button onclick="scrollToSection('why')"           data-section="why">Why Me</button></li>
+      <li><button onclick="scrollToSection('certifications')" data-section="certifications">Certs</button></li>
+      <li><button onclick="scrollToSection('contact')"       data-section="contact">Contact</button></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<!-- ── MOBILE MENU ── -->
-<div class="mobile-menu" id="mobileMenu">
-  <button onclick="scrollToSection('about');closeMenu()">About</button>
-  <button onclick="scrollToSection('skills');closeMenu()">Skills</button>
-  <button onclick="scrollToSection('experience');closeMenu()">Experience</button>
-  <button onclick="scrollToSection('projects');closeMenu()">Projects</button>
-  <button onclick="scrollToSection('why');closeMenu()">Why Me</button>
-  <button onclick="scrollToSection('certifications');closeMenu()">Certifications</button>
-  <button onclick="scrollToSection('contact');closeMenu()">Contact</button>
-</div>
-
-<!-- ── HERO ── -->
-<section class="hero" id="hero">
-  <div class="hero-inner">
-    <div>
-      <span class="hero-badge">🎓 MCS Graduate · University of Wollongong · Visa 485 — Full Work Rights</span>
-      <h1>Ajay Thakur</h1>
-      <p class="hero-subtitle">Software Engineer &amp; Game Developer<br>C++ · Python · Unity · Azure · Flask</p>
-      <div class="hero-cta-group">
-        <button class="btn btn-primary" onclick="scrollToSection('contact')">📬 Get in Touch</button>
-        <button class="btn btn-outline" onclick="scrollToSection('projects')">View My Work ↓</button>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item"><div class="stat-num">6+</div><div class="stat-label">Languages &amp; Tools</div></div>
-        <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Key Projects</div></div>
-        <div class="stat-item"><div class="stat-num">2024</div><div class="stat-label">UOW Graduate</div></div>
-      </div>
-    </div>
-    <div class="hero-avatar">AT</div>
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button onclick="scrollToSection('about');        closeMenu()">About</button>
+    <button onclick="scrollToSection('skills');       closeMenu()">Skills</button>
+    <button onclick="scrollToSection('experience');   closeMenu()">Experience</button>
+    <button onclick="scrollToSection('projects');     closeMenu()">Projects</button>
+    <button onclick="scrollToSection('why');          closeMenu()">Why Me</button>
+    <button onclick="scrollToSection('certifications');closeMenu()">Certifications</button>
+    <button onclick="scrollToSection('contact');      closeMenu()">Contact</button>
   </div>
-</section>
 
-<!-- ── ABOUT ── -->
-<section id="about">
-  <div class="container">
-    <div class="section-label">Professional Summary</div>
-    <h2 class="section-title">About Me</h2>
-    <p class="section-intro">Computer Science graduate from the University of Wollongong with a genuine passion for games and interactive experiences. Skilled in C++, Python, C#, and Unity — with hands-on experience in cloud-integrated backend systems and IT supervision.</p>
-    <div class="about-grid" data-anim>
-      <div class="about-card">
-        <h3>🎓 Education</h3>
-        <p><strong>Master of Computer Science</strong><br>Major: Software Engineering<br>University of Wollongong · Nov 2024</p>
-        <p style="margin-top:.75rem"><strong>Bachelor of Computer Science</strong><br>Government Degree College Kullu · 2015–2018</p>
-      </div>
-      <div class="about-card">
-        <h3>🎯 Career Goal</h3>
-        <p>Seeking a software engineering or game development role where I can contribute player-focused engineering and grow across diverse technical domains. Passionate about building systems that matter to users.</p>
-        <div class="tag-list">
-          <span class="tag">Software Engineer</span>
-          <span class="tag">Game Developer</span>
-          <span class="tag tag-green">Open to Work</span>
+  <!-- ── HERO ── -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-badge">🎓 MCS Graduate · University of Wollongong · Visa 485 — Full Work Rights</span>
+        <h1>Ajay Thakur</h1>
+        <p class="hero-subtitle">Software Engineer &amp; Game Developer<br>C++ · Python · Unity · Azure · Flask</p>
+        <div class="hero-cta-group">
+          <button class="btn btn-primary" onclick="scrollToSection('contact')">📬 Get in Touch</button>
+          <button class="btn btn-outline" onclick="scrollToSection('projects')">View My Work ↓</button>
         </div>
-      </div>
-      <div class="about-card">
-        <h3>💪 Core Strengths</h3>
-        <p>Methodical problem-solver with end-to-end experience — from Unity gameplay systems to Python backends and Azure cloud deployments — backed by real team leadership in fast-paced workplaces.</p>
-        <div class="tag-list">
-          <span class="tag tag-green">Problem-Solving</span>
-          <span class="tag tag-green">Leadership</span>
-          <span class="tag tag-green">Teamwork</span>
-          <span class="tag tag-green">Reliability</span>
-        </div>
-      </div>
-      <div class="about-card">
-        <h3>📍 Location &amp; Visa</h3>
-        <p>Based in <strong>Wollongong, NSW 2500</strong>. Holds <strong>Visa Subclass 485</strong> with full Australian work rights — no sponsorship required, available to start immediately.</p>
-        <div class="tag-list">
-          <span class="tag">Wollongong / Sydney</span>
-          <span class="tag tag-purple">485 — Full Work Rights</span>
-          <span class="tag tag-green">Immediate Start</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── SKILLS ── -->
-<section id="skills">
-  <div class="container">
-    <div class="section-label">Technical Expertise</div>
-    <h2 class="section-title">Skills &amp; Technologies</h2>
-    <p class="section-intro">A focused skill set built through academic study, capstone engineering, and personal project work.</p>
-    <div class="skills-grid" data-anim>
-      <div class="skill-card">
-        <div class="skill-icon">⚙️</div>
-        <h3>C++ &amp; C#</h3>
-        <p>OOP, game entity logic, system architecture, and performance-sensitive programming.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🎮</div>
-        <h3>Unity (2D Game Dev)</h3>
-        <p>Gameplay loop design, physics interactions, level design, and player-engagement systems.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🐍</div>
-        <h3>Python &amp; Flask</h3>
-        <p>Backend service development, REST APIs, real-time data handling, and scripting.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">☁️</div>
-        <h3>Azure &amp; Cloud</h3>
-        <p>Cloud deployment, database integration, and scalable data pipeline engineering.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🗄️</div>
-        <h3>SQL &amp; Databases</h3>
-        <p>Database design, secure data storage, query writing, and cloud SQL integration.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-      </div>
-      <div class="skill-card">
-        <div class="skill-icon">🌐</div>
-        <h3>Web &amp; DevOps</h3>
-        <p>HTML/CSS, PHP, Git, CI/CD concepts, Agile workflows, unit &amp; integration testing.</p>
-        <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── EXPERIENCE ── -->
-<section id="experience">
-  <div class="container">
-    <div class="section-label">Work History</div>
-    <h2 class="section-title">Experience</h2>
-    <p class="section-intro">Diverse professional background spanning IT support, team leadership, and customer operations.</p>
-    <div class="exp-stack" data-anim>
-      <div class="exp-card">
-        <div class="exp-stripe"></div>
-        <div class="exp-body">
-          <div class="exp-header">
-            <h3>Retail Sales &amp; IT Support</h3>
-            <span class="exp-date">Aug 2024 – Present</span>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">6+</div>
+            <div class="stat-label">Languages &amp; Tools</div>
           </div>
-          <div class="exp-company">Cignall</div>
-          <ul>
-            <li>Provided IT and digital support, troubleshooting hardware/software issues in a fast-paced retail environment.</li>
-            <li>Led a team of 20 employees — managed scheduling, coordinated operations, and maintained strong team communication.</li>
-            <li>Identified patterns in operational data and adjusted strategies to improve service delivery.</li>
-          </ul>
+          <div class="stat-item">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Key Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">2024</div>
+            <div class="stat-label">UOW Graduate</div>
+          </div>
         </div>
       </div>
-      <div class="exp-card">
-        <div class="exp-stripe"></div>
-        <div class="exp-body">
-          <div class="exp-header">
-            <h3>Service Team Member</h3>
-            <span class="exp-date">Apr 2022 – Present</span>
-          </div>
-          <div class="exp-company">Coles</div>
-          <ul>
-            <li>Collaborated cross-functionally to deliver excellent customer outcomes under high-volume, time-pressured conditions.</li>
-            <li>Demonstrated reliability and adaptability across shifting priorities in a large retail operation.</li>
-          </ul>
+      <div class="hero-avatar">AT</div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">Professional Summary</div>
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">Computer Science graduate from the University of Wollongong with a genuine passion for games and interactive experiences. Skilled in C++, Python, C#, and Unity — with hands-on experience in cloud-integrated backend systems and IT supervision.</p>
+      <div class="about-grid" data-anim>
+        <div class="about-card">
+          <h3>🎓 Education</h3>
+          <p><strong>Master of Computer Science</strong><br>Major: Software Engineering<br>University of Wollongong · Nov 2024</p>
+          <p style="margin-top:.75rem"><strong>Bachelor of Computer Science</strong><br>Government Degree College Kullu · 2015–2018</p>
         </div>
-      </div>
-      <div class="exp-card">
-        <div class="exp-stripe"></div>
-        <div class="exp-body">
-          <div class="exp-header">
-            <h3>Office &amp; IT Supervisor</h3>
-            <span class="exp-date">Dec 2018 – Dec 2021</span>
+        <div class="about-card">
+          <h3>🎯 Career Goal</h3>
+          <p>Seeking a software engineering or game development role where I can contribute player-focused engineering and grow across diverse technical domains.</p>
+          <div class="tag-list">
+            <span class="tag tag-blue">Software Engineer</span>
+            <span class="tag tag-blue">Game Developer</span>
+            <span class="tag tag-green">Open to Work</span>
           </div>
-          <div class="exp-company">Zenith Event &amp; Services</div>
-          <ul>
-            <li>Supervised IT infrastructure and office systems for 50 employees — managed hardware, software, and data operations end-to-end.</li>
-            <li>Trained staff in office software and operational procedures, building strong documentation and communication skills.</li>
-          </ul>
+        </div>
+        <div class="about-card">
+          <h3>💪 Core Strengths</h3>
+          <p>End-to-end experience — Unity gameplay systems, Python backends, Azure deployments — backed by real team leadership in fast-paced workplaces.</p>
+          <div class="tag-list">
+            <span class="tag tag-green">Problem-Solving</span>
+            <span class="tag tag-green">Leadership</span>
+            <span class="tag tag-green">Teamwork</span>
+            <span class="tag tag-green">Reliability</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <h3>📍 Location &amp; Visa</h3>
+          <p>Based in <strong>Wollongong, NSW 2500</strong>. Holds <strong>Visa Subclass 485</strong> with full Australian work rights — no sponsorship required, available to start immediately.</p>
+          <div class="tag-list">
+            <span class="tag tag-blue">Wollongong / Sydney</span>
+            <span class="tag tag-purple">485 — Full Work Rights</span>
+            <span class="tag tag-green">Immediate Start</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── PROJECTS ── -->
-<section id="projects">
-  <div class="container">
-    <div class="section-label">Portfolio</div>
-    <h2 class="section-title">Projects</h2>
-    <p class="section-intro">Key projects demonstrating game development and full-stack engineering capabilities.</p>
-    <div class="projects-stack" data-anim>
-      <div class="project-card">
-        <div class="project-stripe"></div>
-        <div class="project-body">
-          <div class="project-meta"><span class="project-type type-game">Game Development</span></div>
-          <h3>2D Game Development in Unity</h3>
-          <p>Designed and implemented a complete 2D interactive game from scratch using the Unity engine. Built a full gameplay loop, physics interactions, and level design focused on player engagement. Applied OOP C# patterns to structure game systems and entity logic.</p>
-          <div class="project-tech">
-            <span class="tech-badge">C#</span>
-            <span class="tech-badge">Unity</span>
-            <span class="tech-badge">OOP</span>
-            <span class="tech-badge">Game Design</span>
-            <span class="tech-badge">Physics Systems</span>
-          </div>
-          <div class="project-outcome"><strong>Outcome:</strong> Delivered a fully playable 2D game — showcasing end-to-end game engineering from mechanics design to polished player experience.</div>
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">Technical Expertise</div>
+      <h2 class="section-title">Skills &amp; Technologies</h2>
+      <p class="section-intro">A focused skill set built through academic study, capstone engineering, and personal project work.</p>
+      <div class="skills-grid" data-anim>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>C++ &amp; C#</h3>
+          <p>OOP, game entity logic, system architecture, performance-sensitive programming.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-stripe"></div>
-        <div class="project-body">
-          <div class="project-meta"><span class="project-type type-web">Capstone Project</span></div>
-          <h3>QR Code-Based Attendance System</h3>
-          <p>Architected a cloud-integrated backend using Python and Flask to process real-time QR scan events and update a cloud-hosted SQL database. Implemented secure data storage and seamless API integration. Deployed on Azure with a focus on reliability and data integrity at scale.</p>
-          <div class="project-tech">
-            <span class="tech-badge">Python</span>
-            <span class="tech-badge">Flask</span>
-            <span class="tech-badge">SQL</span>
-            <span class="tech-badge">Azure</span>
-            <span class="tech-badge">REST APIs</span>
-            <span class="tech-badge">PHP</span>
-          </div>
-          <div class="project-outcome"><strong>Outcome:</strong> Successfully deployed a real-time, scalable attendance system demonstrating backend engineering, cloud deployment, and secure data handling.</div>
+        <div class="skill-card">
+          <div class="skill-icon">🎮</div>
+          <h3>Unity (2D Game Dev)</h3>
+          <p>Gameplay loop design, physics interactions, level design, player-engagement systems.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <h3>Python &amp; Flask</h3>
+          <p>Backend service development, REST APIs, real-time data handling, and scripting.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">☁️</div>
+          <h3>Azure &amp; Cloud</h3>
+          <p>Cloud deployment, database integration, and scalable data pipeline engineering.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL &amp; Databases</h3>
+          <p>Database design, secure data storage, query writing, and cloud SQL integration.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Web &amp; DevOps</h3>
+          <p>HTML/CSS, PHP, Git, CI/CD concepts, Agile workflows, unit &amp; integration testing.</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── WHY HIRE ME ── -->
-<section id="why">
-  <div class="container">
-    <div class="section-label">Value Proposition</div>
-    <h2 class="section-title">Why Hire Me?</h2>
-    <p class="section-intro">What I bring beyond the technical skills on my resume.</p>
-    <div class="why-grid" data-anim>
-      <div class="why-card">
-        <div class="why-icon">🎮</div>
-        <h3>Genuine Passion for Games</h3>
-        <p>From building my first Unity game to following competitive ecosystems like League of Legends and VALORANT — games are a lifelong passion, not just a career interest.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">🧩</div>
-        <h3>Full-Stack Engineering Mindset</h3>
-        <p>Built across the stack — Unity gameplay systems, Python Flask backends, Azure cloud deployments. I understand how systems connect and contribute across technical domains.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">👥</div>
-        <h3>Proven Team Leader</h3>
-        <p>Led a team of 20 in a fast-paced environment. I communicate clearly, delegate effectively, and keep a team moving under pressure.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">✅</div>
-        <h3>Full Work Rights — No Delays</h3>
-        <p>Visa 485 with full Australian work rights — no sponsorship required, no uncertainty. Ready to start immediately in any role.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">☁️</div>
-        <h3>Real-World Cloud Experience</h3>
-        <p>Capstone deployed live on Azure with real-time data integrity requirements — a production-minded engineering exercise, not just academic.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">📈</div>
-        <h3>Hungry to Grow</h3>
-        <p>Fresh graduate with a strong foundation and years of workplace experience — energy and motivation to learn and grow from day one.</p>
-      </div>
-      <div class="why-quote">
-        <p>"Games are not just a professional interest — they are a lifelong passion. I am excited by the opportunity to contribute engineering solutions that directly improve how players engage with the games they love."</p>
-        <div class="author">— Ajay Thakur</div>
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">Work History</div>
+      <h2 class="section-title">Experience</h2>
+      <p class="section-intro">Diverse professional background spanning IT support, team leadership, and customer operations.</p>
+      <div class="exp-stack" data-anim>
+
+        <div class="exp-card">
+          <div class="exp-stripe"></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <h3>Retail Sales &amp; IT Support</h3>
+              <span class="exp-date">Aug 2024 – Present</span>
+            </div>
+            <div class="exp-company">Cignall</div>
+            <ul>
+              <li>Provided IT and digital support for internal systems, troubleshooting hardware/software issues in a fast-paced retail environment.</li>
+              <li>Led a team of 20 employees — managed scheduling, coordinated operations, and maintained strong communication across the floor.</li>
+              <li>Identified patterns in operational data and adjusted strategies to improve service delivery.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-stripe"></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <h3>Service Team Member</h3>
+              <span class="exp-date">Apr 2022 – Present</span>
+            </div>
+            <div class="exp-company">Coles</div>
+            <ul>
+              <li>Collaborated cross-functionally within a team to deliver excellent customer outcomes under high-volume, time-pressured conditions.</li>
+              <li>Demonstrated reliability and adaptability across shifting priorities in a large retail operation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-stripe"></div>
+          <div class="exp-body">
+            <div class="exp-header">
+              <h3>Office &amp; IT Supervisor</h3>
+              <span class="exp-date">Dec 2018 – Dec 2021</span>
+            </div>
+            <div class="exp-company">Zenith Event &amp; Services</div>
+            <ul>
+              <li>Supervised IT infrastructure and office systems for 50 employees — managed hardware, software, and data operations end-to-end.</li>
+              <li>Trained staff in office software and operational procedures, building strong documentation and communication skills.</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── CERTIFICATIONS ── -->
-<section id="certifications">
-  <div class="container">
-    <div class="section-label">Credentials</div>
-    <h2 class="section-title">Certifications</h2>
-    <p class="section-intro">Formal credentials that complement my degree and practical experience.</p>
-    <div class="cert-grid" data-anim>
-      <div class="cert-card">
-        <div class="cert-icon">🎨</div>
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-intro">Key projects demonstrating game development and full-stack engineering capabilities.</p>
+      <div class="projects-stack" data-anim>
+
+        <div class="project-card">
+          <div class="project-stripe"></div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type type-game">Game Development</span>
+            </div>
+            <h3>2D Game Development in Unity</h3>
+            <p>Designed and implemented a complete 2D interactive game from scratch using the Unity engine. Built a full gameplay loop, physics interactions, and level design focused on player engagement. Applied OOP C# patterns to structure game systems and entity logic throughout the project.</p>
+            <div class="project-tech">
+              <span class="tech-badge">C#</span>
+              <span class="tech-badge">Unity</span>
+              <span class="tech-badge">OOP</span>
+              <span class="tech-badge">Game Design</span>
+              <span class="tech-badge">Physics Systems</span>
+            </div>
+            <div class="project-outcome">
+              <strong>Outcome:</strong> Delivered a fully playable 2D game — showcasing end-to-end game engineering from mechanics design to polished player experience.
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-stripe"></div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type type-web">Capstone Project</span>
+            </div>
+            <h3>QR Code-Based Attendance System</h3>
+            <p>Architected a cloud-integrated backend using Python and Flask to process real-time QR scan events and update a cloud-hosted SQL database. Implemented secure data storage and seamless API integration. Deployed on Azure with a focus on reliability and data integrity at scale.</p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">Azure</span>
+              <span class="tech-badge">REST APIs</span>
+              <span class="tech-badge">PHP</span>
+            </div>
+            <div class="project-outcome">
+              <strong>Outcome:</strong> Successfully deployed a real-time, scalable attendance system demonstrating backend engineering, cloud deployment, and secure data handling.
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Chat Assistant -->
+        <div class="project-card">
+          <div class="project-stripe"></div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-type type-ai">AI Project</span>
+            </div>
+            <h3>AjayAI &mdash; Chat Assistant</h3>
+            <p>Built a fully functional AI-powered chat assistant using HTML, CSS, and JavaScript &mdash; integrated with the Groq API (Llama 3.3) for real-time AI responses. Features a ChatGPT-style UI with chat history, typing indicators, markdown formatting, code block rendering, and mobile-responsive sidebar.</p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Groq API</span>
+              <span class="tech-badge">Llama 3.3</span>
+              <span class="tech-badge">REST APIs</span>
+              <span class="tech-badge">localStorage</span>
+            </div>
+            <div class="project-outcome">
+              <strong>Outcome:</strong> Deployed live on GitHub Pages &mdash; demonstrates AI API integration, modern UI design, and front-end engineering.
+              <a href="https://ajaythakur2923.github.io/ai-chat-assistant" target="_blank" style="display:inline-block;margin-top:8px;color:#2563eb;font-weight:600;font-size:.82rem;">View Live Demo &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY HIRE ME ── -->
+  <section id="why">
+    <div class="container">
+      <div class="section-label">Value Proposition</div>
+      <h2 class="section-title">Why Hire Me?</h2>
+      <p class="section-intro">Here's what I bring beyond the technical skills on my resume.</p>
+      <div class="why-grid" data-anim>
+        <div class="why-card">
+          <div class="why-icon">🎮</div>
+          <h3>Genuine Passion for Games</h3>
+          <p>From building my first Unity game to following competitive ecosystems like League of Legends and VALORANT — games are a lifelong passion, not just a career interest.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🧩</div>
+          <h3>Full-Stack Engineering Mindset</h3>
+          <p>Built across the stack — Unity gameplay systems, Python Flask backends, Azure cloud deployments. I understand how systems connect and can contribute across domains.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">👥</div>
+          <h3>Proven Team Leader</h3>
+          <p>Led a team of 20 in a fast-paced environment. I communicate clearly, delegate effectively, and keep a team moving under pressure.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">✅</div>
+          <h3>Full Work Rights — No Delays</h3>
+          <p>Visa 485 with full Australian work rights — no sponsorship required, no uncertainty. Ready to start immediately in any role.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">☁️</div>
+          <h3>Real-World Cloud Experience</h3>
+          <p>Capstone deployed live on Azure with real-time data integrity — a production-minded engineering exercise, not just academic.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📈</div>
+          <h3>Hungry to Grow</h3>
+          <p>Fresh graduate with a strong foundation and years of workplace experience — energy and motivation to learn best practices from day one.</p>
+        </div>
+        <div class="why-quote">
+          <p>"Games are not just a professional interest — they are a lifelong passion. I am excited by the opportunity to contribute engineering solutions that directly improve how players engage with the games they love."</p>
+          <div class="author">— Ajay Thakur</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CERTIFICATIONS ── -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-title">Certifications</h2>
+      <p class="section-intro">Formal credentials complementing my degree and practical experience.</p>
+      <div class="cert-grid" data-anim>
+        <div class="cert-card">
+          <div class="cert-icon">🎨</div>
+          <div>
+            <h3>Web Designing &amp; Development Certificate</h3>
+            <p>2015 / 2016 — Foundational web development training covering design principles and front-end development.</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">🔒</div>
+          <div>
+            <h3>Workshop on Online Safety — Social Surfing 3.0</h3>
+            <p>Digital safety, cybersecurity awareness, and responsible online practices in professional environments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-intro">Open to software engineering, game development, and IT roles in Wollongong, Sydney, and remotely.</p>
+      <div class="contact-grid" data-anim>
         <div>
-          <h3>Web Designing &amp; Development Certificate</h3>
-          <p>2015/2016 — Foundational web development training covering design principles and front-end development.</p>
+          <h3 class="contact-info-heading">Reach me via</h3>
+          <a class="contact-link" href="/cdn-cgi/l/email-protection#a6c7ccc7dfd2cec7cdd3d4949f9495e6c1cbc7cfca88c5c9cb">
+            <span class="contact-icon">📧</span>
+            <div class="contact-detail"><span class="__cf_email__" data-cfemail="d7b6bdb6aea3bfb6bca2a5e5eee5e497b0bab6bebbf9b4b8ba">[email&#160;protected]</span> <span>Email — preferred contact</span></div>
+          </a>
+          <a class="contact-link" href="https://linkedin.com/in/ajay-thakur-325832130" target="_blank">
+            <span class="contact-icon">🔗</span>
+            <div class="contact-detail">linkedin.com/in/ajay-thakur-325832130 <span>LinkedIn Profile</span></div>
+          </a>
+          <a class="contact-link" href="tel:+61490916701">
+            <span class="contact-icon">📱</span>
+            <div class="contact-detail">+61 490 916 701 <span>Mobile — Wollongong, NSW 2500</span></div>
+          </a>
         </div>
-      </div>
-      <div class="cert-card">
-        <div class="cert-icon">🔒</div>
-        <div>
-          <h3>Workshop on Online Safety — Social Surfing 3.0</h3>
-          <p>Digital safety, cybersecurity awareness, and responsible online practices in professional environments.</p>
+        <div class="availability">
+          <h3>Current Status</h3>
+          <div class="avail-item"><div class="dot dot-green"></div> Actively seeking engineering roles</div>
+          <div class="avail-item"><div class="dot dot-green"></div> Available for immediate start</div>
+          <div class="avail-item"><div class="dot dot-green"></div> Visa 485 — Full Work Rights</div>
+          <div class="avail-item"><div class="dot dot-blue"></div> Open to full-time &amp; contract roles</div>
+          <div class="avail-item"><div class="dot dot-blue"></div> Wollongong / Sydney / Remote</div>
+          <button class="resume-btn" onclick="alert('Replace this with a link to your PDF resume!')">⬇️ Download Resume (PDF)</button>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── CONTACT ── -->
-<section id="contact">
-  <div class="container">
-    <div class="section-label">Get In Touch</div>
-    <h2 class="section-title">Let's Connect</h2>
-    <p class="section-intro">Open to software engineering, game development, and IT roles in Wollongong, Sydney, and remotely.</p>
-    <div class="contact-grid" data-anim>
-      <div class="contact-info">
-        <h3>Reach me via</h3>
-        <a class="contact-link" href="mailto:ajaythakur2923@gmail.com">
-          <span class="contact-icon">📧</span>
-          <div class="contact-detail">ajaythakur2923@gmail.com <span>Email — preferred contact</span></div>
-        </a>
-        <a class="contact-link" href="https://linkedin.com/in/ajay-thakur-325832130" target="_blank">
-          <span class="contact-icon">🔗</span>
-          <div class="contact-detail">linkedin.com/in/ajay-thakur-325832130 <span>LinkedIn Profile</span></div>
-        </a>
-        <a class="contact-link" href="tel:+61490916701">
-          <span class="contact-icon">📱</span>
-          <div class="contact-detail">+61 490 916 701 <span>Mobile — Wollongong, NSW 2500</span></div>
-        </a>
-      </div>
-      <div class="availability">
-        <h3>Current Status</h3>
-        <div class="avail-item"><div class="dot dot-green"></div> Actively seeking engineering roles</div>
-        <div class="avail-item"><div class="dot dot-green"></div> Available for immediate start</div>
-        <div class="avail-item"><div class="dot dot-green"></div> Visa 485 — Full Work Rights</div>
-        <div class="avail-item"><div class="dot dot-blue"></div> Open to full-time &amp; contract roles</div>
-        <div class="avail-item"><div class="dot dot-blue"></div> Wollongong / Sydney / Remote</div>
-        <!-- Replace # with the actual path to your resume PDF -->
-        <a href="resume.pdf" download class="resume-btn">⬇️ Download Resume (PDF)</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── FOOTER ── -->
-<footer>
-  <p>© 2025 <strong>Ajay Thakur</strong> · Master of Computer Science · University of Wollongong · Wollongong, NSW</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p>© 2025 <strong>Ajay Thakur</strong> �
