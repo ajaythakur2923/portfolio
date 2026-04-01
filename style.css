@@ -466,8 +466,17 @@ footer strong { color: rgba(255,255,255,0.8); }
 @media (max-width: 720px) {
   .nav-links  { display: none; }
   .hamburger  { display: flex; }
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-avatar { display: none; }
+  .hero-inner { grid-template-columns: 1fr; display: flex; flex-direction: column-reverse; align-items: center; gap: 1.5rem; }
+  .hero-avatar {
+    width: 90px;
+    height: 90px;
+    font-size: 1.8rem;
+    margin: 0 auto 1.5rem;
+  }
+  .hero-inner {
+    text-align: center;
+    justify-items: center;
+  }
   .about-grid, .why-grid, .contact-grid, .cert-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
   nav { padding: 0 1rem; }
