@@ -461,7 +461,7 @@ h2.section-title { font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 1rem; l
   cursor: pointer;
 }
 
-.resume-btn:hover { background: var(--blue-700); transform: translateY(-1px); }
+.resume-btn:hover { background: var(--blue-700); color: var(--white); transform: translateY(-1px); }
 
 /* ── FOOTER ── */
 footer { background: var(--slate-900); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem; font-size: 0.85rem; }
