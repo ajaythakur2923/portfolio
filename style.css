@@ -582,7 +582,7 @@ footer strong { color: rgba(255,255,255,0.8); }
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Featured cert card — AI certificate highlight */
+
 .cert-card-featured {
   border-color: var(--blue-400);
   background: linear-gradient(135deg, var(--blue-50), #f0f9ff);
