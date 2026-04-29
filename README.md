@@ -100,4 +100,4 @@ I used Claude (by Anthropic) as an AI assistant while building this portfolio. I
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/ajaythakur2923)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:ajaythakur2923@gmail.com)
 
-📱 +61 490 916 701 · Wollongong, NSW 2500 · Visa 485 — Full Work Rights
+📱 +61 490 916 701 · Wollongong, NSW 2500 · Full Work Rights
